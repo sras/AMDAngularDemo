@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="amd-demo">
+<head>
+    <meta charset="utf-8" />
+    <title>AMD-Test</title>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
+    <script>
+      angular.module('amd-demo', [])
+    </script>
+    <script src="controller-1.js"></script>
+    <script src="controller-2.js"></script>
+    <script src="controller-3.js"></script>
+    </head>
+<body>
+  <div ng-controller="controller_1">
+    {{content}}
+  </div>
+  <div ng-controller="controller_2">
+    {{content}}
+  </div>
+  <div ng-controller="controller_3">
+    {{content}}
+  </div>
+</body>

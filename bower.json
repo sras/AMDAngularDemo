@@ -1,0 +1,20 @@
+{
+  "name": "amdtest",
+  "version": "0.0.0",
+  "authors": [
+    "Sandeep.C.R <sandeepcr2@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8",
+    "requirejs": "~2.1.22"
+  }
+}
