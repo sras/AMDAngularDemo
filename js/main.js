@@ -2,11 +2,11 @@ require.config({
   baseUrl: "js/",
   paths: {
     "angular": "../bower_components/angular/angular",
-    "angular-route": "../bower_components/angular-route/angular-route",
+    "angular-ui-router": "../bower_components/angular-ui-router/release/angular-ui-router.min",
     "angularAMD": "../bower_components/angularAMD/angularAMD"
   },
   shim: {
-    "angular-route": ["angular"]
+    "angular-ui-router":["angular"]
   },
   deps: ["app"]
 });
