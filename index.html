@@ -1,24 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="amd-demo">
-<head>
+<html>
+  <head>
     <meta charset="utf-8" />
     <title>AMD-Test</title>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.js"></script>
-    <script>
-      angular.module('amd-demo', [])
-    </script>
-    <script src="controller-1.js"></script>
-    <script src="controller-2.js"></script>
-    <script src="controller-3.js"></script>
-    </head>
+  </head>
 <body>
-  <div ng-controller="controller_1">
-    {{content}}
+  <div ui-view>
   </div>
-  <div ng-controller="controller_2">
-    {{content}}
-  </div>
-  <div ng-controller="controller_3">
-    {{content}}
-  </div>
+  <script
+    data-main="js/main.js"
+    src="bower_components/requirejs/require.js"></script>
 </body>
