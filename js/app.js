@@ -1,13 +1,13 @@
-define(['angularAMD', 'angular-ui-router'], function(angularAMD) {
-  var app = angular.module('amd-demo', ['ui.router']);
+define(['angularAMD'], function(angularAMD) {
+  var app = angular.module('amd-demo',  ['ui.router']);
   app.config(function($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('page1', angularAMD.route({
+    $stateProvider.state('page1', {
         url: '/page1',
         templateUrl: 'views/page1.html',
         controller: 'controller_1',
         controllerUrl: 'js/controller-1.js'
-      }))
-    .state('page2', angularAMD.route({
+      })
+    .state('page2', ({
         url: '/page2',
         templateUrl: 'views/page2.html',
         controller: 'controller_2',

@@ -1,5 +1,5 @@
-define(['app'], function(app) {
-    app.controller('controller_1', ['$scope', function($scope) {
-      $scope.content = "controller_1";
-      }]);
-  });
+angular
+  .module('amd-demo')
+  .controller('controller_1', ['$scope', function($scope) {
+  $scope.content = "controller_1";
+  }]);
