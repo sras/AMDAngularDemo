@@ -22,5 +22,7 @@ define(['angularAMD'], function(angularAMD) {
 
     $urlRouterProvider.otherwise('/page1');
     });
+  // Return a patched version of our app module with
+  // lazy loading enabled.
   return angularAMD.bootstrap(app);
   });
